@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketing System</title>
+</head>
+<body>
+    <header>
+        <h1>Titcket Sasa</h1>
+        <nav>
+            <a href="#">Sign in</a>
+            <a href="#">Sign up</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Tickets</h2>
+        <div class="tabs">
+            <button id="all" class="active">All</button>
+            <button id="conference">Conference</button>
+            <button id="wedding">Wedding</button>
+            <button id="gala">Gala</button>
+            <button id="seminar">Seminar</button>
+        </div>
+        <div class="tickets">        
+        </div>
+    </main>
+    <style>
+        body{
+            background-color: aliceblue;
+            color: rgb(34, 33, 33);
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 50px;
+        }
+        main{
+            padding: 16px 50px;
+        }
+        .tabs{
+            display: flex;
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+        .tabs button{
+            border: none;
+            background-color: rgba(153, 205, 50, 0.592);
+            padding: 7px 13px;
+            border-radius: 12px;
+        }
+        .tabs .active{
+            background-color: rgb(88, 119, 25);
+            color: white;
+        }
+
+
+        .tickets{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .card{
+            width: 28%;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            padding: 15px;
+        }
+
+        .card p{
+            display: flex;
+            justify-content: space-between;
+        }
+        .event{
+            color: darkgreen
+        }
+        .wedding{
+            background-color: rgba(255, 192, 203, 0.727);
+        }
+        .concert{
+            background-color: rgba(137, 43, 226, 0.451);
+        }
+        .seminar{
+            background-color: rgba(0, 255, 255, 0.491);
+        }
+    </style>
+    <script src="main.js"></script>
+</body>
+</html>
