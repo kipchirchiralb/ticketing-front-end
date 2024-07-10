@@ -14,15 +14,35 @@
         </nav>
     </header>
     <main>
+        <h2>New Ticket</h2>
+        <form action="">
+            <label for="id">ID</label>
+            <input type="number" name="id" id="id" required>
+            <label for="user">User</label>
+            <input type="text" name="user" id="user" required>
+            <label for="type">Ticket Type</label>
+            <select name="type" id="type">
+                <option value="regular">Regular</option>
+                <option value="vip">Vip</option>
+            </select>
+            <label for="event">Event</label>
+            <select name="event" id="event">
+                <option value="conference">Conference</option>
+                <option value="wedding">Wedding</option>
+                <option value="gala">Gala</option>
+                <option value="seminar">Seminar</option>
+            </select>
+            <button type="submit">+ Add</button>
+        </form>
         <h2>Tickets</h2>
         <div class="tabs">
-            <button id="all" class="active">All</button>
-            <button id="conference">Conference</button>
-            <button id="wedding">Wedding</button>
-            <button id="gala">Gala</button>
-            <button id="seminar">Seminar</button>
+            <button id="all" class="filter-btn active">All</button>
+            <button id="conference" class="filter-btn" >Conference</button>
+            <button id="wedding" class="filter-btn">Wedding</button>
+            <button id="gala" class="filter-btn">Gala</button>
+            <button id="seminar" class="filter-btn" >Seminar</button>
         </div>
-        <div class="tickets">        
+        <div class="tickets">       
         </div>
     </main>
     <style>
